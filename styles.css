@@ -5,6 +5,7 @@
     --ash-gray: hsla(103, 4%, 64%, 1);
     --black: hsla(0, 0%, 0%, 1);
     --dim-gray: hsla(120, 1%, 38%, 1);
+    --nav-text-size: 1.5em;
 }
 
 body {
@@ -13,30 +14,68 @@ body {
     background-image: url("images/tile.png");
     background-size: cover;
     background-repeat:no-repeat; */
-}
-
-h2 {
-    color: yellow;
-    text-decoration: underline;
-    text-align: center;
-}
-
-#poster {
-    margin: auto;
-    display: block;
-}
-
-#home {
-    width: 28px;
+    margin: 0px;
 }
 
 .main-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
     background-color: var(--night);
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #site-logo {
     max-width: 120px;
 }
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+}
+.main-navigation a {
+    color: var(--ash-gray);
+    text-decoration: none;
+    font-size: var(--nav-text-size);
+    padding: 1em;
+}
+.user-nav {
+    display: flex;
+    flex-direction: row;
+}
+.user-nav a {
+    color: var(--ash-gray);
+    text-decoration: none;
+    font-size: var(--nav-text-size);
+    padding: 1em;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  #site-search {
+    display: flex;
+    flex-direction: row;
+    min-width: 400px;
+    padding: 1em;
+  }
+  #site-search input {
+    flex: 1;
+    padding: 0.5em;
+    border: 1px solid var(--ash-gray);
+    border-radius: 5px 0px 0px 5px;
+  }
+  #site-search button {
+    background-color: var(--pumpkin);
+    padding: 0.5em;
+    border: 1px solid var(--ash-gray);
+    border-radius: 0px 5px 5px 0px;
+  }
