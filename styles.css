@@ -14,12 +14,14 @@ body {
     background-image: url("images/tile.png");
     background-size: cover;
     background-repeat:no-repeat; */
+    font-family: "Open Sans", sans-serif;
     margin: 0px;
 }
 
 .main-header {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
     background-color: var(--night);
@@ -33,6 +35,7 @@ body {
 .main-navigation {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .main-navigation a {
     color: var(--ash-gray);
@@ -43,12 +46,16 @@ body {
 .user-nav {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .user-nav a {
-    color: var(--ash-gray);
+    color: var(--pumpkin);
     text-decoration: none;
     font-size: var(--nav-text-size);
     padding: 1em;
+}
+.user-nav a:hover {
+    color: var(--ash-gray);
 }
 .visuallyhidden {
     border: 0;
@@ -59,7 +66,7 @@ body {
     padding: 0;
     position: absolute;
     width: 1px;
-  }
+}
 
   #site-search {
     display: flex;
@@ -78,4 +85,7 @@ body {
     padding: 0.5em;
     border: 1px solid var(--ash-gray);
     border-radius: 0px 5px 5px 0px;
+  }
+  .nav-button {
+    display: none;
   }

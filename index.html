@@ -6,6 +6,16 @@
   <title>Hello</title>
   <link rel="icon" href="images/user-icon-on-transparent-background-free-png.webp">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="main.js"></script>
 </head>
 <!-- body is for content -->
 
@@ -14,19 +24,36 @@
     <a href="/">
       <img id="site-logo" src="images/logo.png" alt="jarowuuk logo">
     </a>
+    <button class="nav-button">
+      <i class="fa-solid fa-bars"></i>
+      <span class="visuallyhidden">Menu</span>
+    </button>
     <nav class="main-navigation">
       <a href="index.html">Home</a>
       <a href="contact.html">Contact</a>
+      <a href="About.html">About</a>
     </nav>
     <form id="site-search" method="get" action="search.html">
       <label class="visuallyhidden" for="search">Search</label>
       <input type="search" id="search" name="keyword" placeholder="search" aria-label="search">
-      <button type="submit" name="submit">Search</button>
+      <button type="submit" name="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span class="visuallyhidden">Search</span>
+      </button>
     </form>
     <nav class="user-nav">
-      <a href="#">Account</a>
-      <a href="#">Wishlist</a>
-      <a href="#">Cart</a>
+      <a href="#">
+        <i class="fa-solid fa-user"></i>
+        <span class="visuallyhidden">Account</span>
+      </a>
+      <a href="#">
+        <i class="fa-solid fa-heart"></i>
+        <span class="visuallyhidden">Wishlist</span>
+      </a>
+      <a href="#">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span class="visuallyhidden">Basket</span>
+      </a>
     </nav>
   </header>
   <main></main>
