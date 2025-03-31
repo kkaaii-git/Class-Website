@@ -22,6 +22,7 @@
         max-height: 0px;
         overflow: hidden;
         order: 5;
+        transition: max-height 0.5s;
     }
     .main-navigation.open {
         max-height: 50vh;
