@@ -16,6 +16,7 @@ body {
     background-repeat:no-repeat; */
     font-family: "Open Sans", sans-serif;
     margin: 0px;
+    overflow-y: scroll;
 }
 
 .main-header {
@@ -88,4 +89,22 @@ body {
   }
   .nav-button {
     display: none;
+  }
+  .slide {
+    min-height: 50vh;
+    background-color: var(--pumpkin);
+    min-width: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 32px;
+    color: white;
+  }
+  .slide-content img {
+    max-height: 50vh;
+    display: block;
+  }
+  .slide-content {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
   }
