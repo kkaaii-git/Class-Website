@@ -98,6 +98,7 @@ body {
     place-items: center;
     font-size: 32px;
     color: white;
+    position: relative;
   }
   .slide-content img {
     max-height: 50vh;
@@ -107,4 +108,16 @@ body {
     display: flex;
     flex-flow: row wrap;
     gap: 1em;
+  }
+  .slide-cta-button {
+    position: absolute;
+    bottom: 1em;
+    padding: 1em;
+    min-width: 300px;
+    font-size: 18px;
+    border-radius: 1em;
+    background-color: var(--black);
+    color: var(--ash-gray);
+    text-align: center;
+    text-decoration: none;
   }
