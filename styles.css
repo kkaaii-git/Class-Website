@@ -17,6 +17,9 @@ body {
     font-family: "Open Sans", sans-serif;
     margin: 0px;
     overflow-y: scroll;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
 }
 
 .main-header {
@@ -120,4 +123,12 @@ body {
     color: var(--ash-gray);
     text-align: center;
     text-decoration: none;
+  }
+  .main-footer {
+    background-color: var(--ash-gray);
+
+  }
+  .footer-nav {
+    display: flex;
+    flex-flow: column wrap;
   }
