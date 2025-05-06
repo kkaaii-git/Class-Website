@@ -158,3 +158,31 @@ body {
     text-align: center;
     margin-top: 2em;
   }
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 999;
+    background-color: var(--black);
+    top: 100%;
+    min-width: 100%;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .dropdown:hover .dropdown-menu {
+    max-height: 300px;
+  }
+  .dropdown > a::after {
+    content: "\25bc";
+    font-size: 0.6em;
+    margin-left: 0.5em;
+  }
+  .dropdown-menu a {
+    white-space: nowrap;
+  }
+  .dropdown {
+    position: relative;
+  }
+  .dropdown a {
+    display: block;
+  }
