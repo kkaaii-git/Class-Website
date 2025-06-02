@@ -36,6 +36,7 @@ body {
 
 #site-logo {
   max-width: 120px;
+  height: auto;
 }
 
 .main-navigation {
@@ -276,4 +277,23 @@ body {
   font-size: 4em;
   color: var(--black);
   text-shadow: 0px 0px 2px var(--light-gray);
+}
+
+.main-navigation a.active {
+  font-weight: bold;         
+  text-decoration: underline; 
+  color: #333333;             
+}
+.about-section {
+  padding: 2em;
+  background-color: var(--light-gray);
+  border-radius: 1em;
+  line-height: 1.6;
+  max-width: 800px;  
+  margin: 0 auto;    
+}
+
+.about-section h1 {
+  text-align: center;
+  margin-bottom: 1em;
 }
