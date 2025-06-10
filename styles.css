@@ -1,7 +1,7 @@
 :root {
   /* CSS HSL */
   --night: hsla(90, 8%, 5%, 1);
-  --pumpkin: hsla(23, 94%, 51%, 1);
+  --powderblue: hsla(186, 52%, 79%, 1);
   --ash-gray: hsla(103, 4%, 64%, 1);
   --black: hsla(0, 0%, 0%, 1);
   --dim-gray: hsla(120, 1%, 38%, 1);
@@ -59,7 +59,7 @@ body {
 }
 
 .user-nav a {
-  color: var(--pumpkin);
+  color: var(--powderblue);
   text-decoration: none;
   font-size: var(--nav-text-size);
   padding: 1em;
@@ -95,7 +95,7 @@ body {
 }
 
 #site-search button {
-  background-color: var(--pumpkin);
+  background-color: var(--powderblue);
   padding: 0.5em;
   border: 1px solid var(--ash-gray);
   border-radius: 0px 5px 5px 0px;
@@ -107,7 +107,7 @@ body {
 
 .slide {
   min-height: 50vh;
-  background-color: var(--pumpkin);
+  background-color: var(--powderblue);
   min-width: 100%;
   display: grid;
   place-items: center;
