@@ -269,7 +269,7 @@ body {
   display: grid;
   place-items: center;
   background-color: var(--light-gray);
-  background-image: url("images/banners/images/banners/shoe-banner.jpg");
+  background-image: url("images/banners/shoe-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
