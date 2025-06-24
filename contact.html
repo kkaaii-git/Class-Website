@@ -1,18 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - TipToe Soles</title>
-    <link rel="icon" href="images/user-icon-on-transparent-background-free-png.webp">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TipToe Soles - Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
+
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html"class="active">Contact</a>
-        <a href="about.html">About</a>
+  <header class="main-header">
+    <a href="index.html">
+      <img id="site-logo" src="images/logo.png" alt="TipToe Soles logo">
+    </a>
+    <nav class="main-navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
-    <h1>Contact</h1>
+  </header>
+
+  <main class="content">
+    <section class="contact-section column-12">
+      <h1>Contact TipToe Soles</h1>
+      <form action="#" method="post" class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <nav class="footer-nav">
+        <h3>Policies</h3>
+        <a href="#">Deliveries</a>
+        <a href="#">Returns</a>
+        <a href="#">Exchange</a>
+      </nav>
+      <nav class="footer-nav">
+        <h3>Services</h3>
+        <a href="#">Find a store</a>
+        <a href="#">Size Guide</a>
+        <a href="#">Giftcards</a>
+      </nav>
+      <nav class="footer-nav">
+        <h3>TipToe Soles</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <nav class="social-nav">
+        <h3>Social</h3>
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://instagram.com">Instagram</a>
+        <a href="https://youtube.com">YouTube</a>
+      </nav>
+    </div>
+    <p class="copyright">&copy; TipToe Soles 2025. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
