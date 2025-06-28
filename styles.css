@@ -28,10 +28,11 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   background-color: var(--night);
   padding-left: 30px;
   padding-right: 30px;
+  gap: 1em;
 }
 
 #site-logo {
@@ -82,9 +83,9 @@ body {
 
 #site-search {
   display: flex;
-  flex-direction: row;
-  min-width: 400px;
+  flex: 1 1 400px;
   padding: 1em;
+  max-width: 500px;
 }
 
 #site-search input {
