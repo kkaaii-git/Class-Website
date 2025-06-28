@@ -6,26 +6,15 @@
   <meta name="viewport" content="initial-scale=1, width=device-width">
   <title>TipToe Soles - Home</title>
 
-  <!-- Favicon -->
   <link rel="icon" href="images/user-icon-on-transparent-background-free-png.webp">
-
-  <!-- CSS Stylesheets -->
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="responsive.css">
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Google Fonts -->
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-    rel="stylesheet">
-
-  <!-- JS Scripts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <script src="main.js" defer></script>
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>
@@ -33,32 +22,24 @@
 
 <body>
   <header class="main-header">
-    <!-- Logo linking to homepage -->
     <a href="index.html">
       <img id="site-logo" src="images/logo.png" alt="TipToe Soles logo">
     </a>
 
-    <!-- Hamburger Menu (mobile) -->
-    <button class="nav-button">
-      <i class="fa-solid fa-bars"></i>
-      <span class="visuallyhidden">Menu</span>
-    </button>
-
-    <!-- Primary Navigation (main site links) -->
     <nav class="main-navigation">
       <a href="index.html" class="active">Home</a>
       <div class="dropdown">
         <a href="products.html">Products</a>
-        <nav class="dropdown-menu">
+        <div class="dropdown-menu">
           <a href="men.html">Mens</a>
           <a href="women.html">Women</a>
           <a href="kids.html">Kids</a>
-        </nav>
+        </div>
       </div>
       <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- Search bar -->
     <form id="site-search" method="get" action="search.html">
       <label class="visuallyhidden" for="search">Search</label>
       <input type="search" id="search" name="keyword" placeholder="search" aria-label="search">
@@ -68,19 +49,17 @@
       </button>
     </form>
 
-    <!-- User navigation (account, wishlist, cart) -->
     <nav class="user-nav">
-      <a href="#"><i class="fa-solid fa-user"></i><span class="visuallyhidden">Account</span></a>
+      <a href="login.html"><i class="fa-solid fa-user"></i><span class="visuallyhidden">Account</span></a>
       <a href="#"><i class="fa-solid fa-heart"></i><span class="visuallyhidden">Wishlist</span></a>
       <a href="#"><i class="fa-solid fa-basket-shopping"></i><span class="visuallyhidden">Basket</span></a>
     </nav>
   </header>
 
-  <!-- Carousel Section -->
   <div id="home-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
     <div class="slide">
       <div class="slide-content">
-        <img src="images/slides/tennis-shoes.jpg" alt="tennis shoes">
+        <img src="images/slides/tennis-shoes.jpg" alt="Tennis shoes promotional banner">
         <div>
           <h2>Tennis Shoes</h2>
           <p>The perfect shoes for tennis</p>
@@ -94,51 +73,34 @@
     <div class="slide">5</div>
   </div>
 
-  <!-- Main Content Grid -->
   <main class="content">
-    <!-- Shoe Cards -->
     <div class="card column-4">
-      <img class="card-image" src="images/products/Casual_shoes_women.jpg">
+      <img class="card-image" src="images/products/Casual_shoes_women.jpg" alt="Women's casual shoes">
       <div class="card-content">
         <h4 class="card-title">Women's Shoes</h4>
         <a href="#">Shop Women</a>
       </div>
     </div>
     <div class="card column-4">
-      <img class="card-image" src="images/products/Brown_comfy_shoes.jpg">
+      <img class="card-image" src="images/products/Brown_comfy_shoes.jpg" alt="Men's brown comfy shoes">
       <div class="card-content">
         <h4 class="card-title">Men's Shoes</h4>
         <a href="#">Shop Men</a>
       </div>
     </div>
     <div class="card column-4">
-      <img class="card-image" src="images/products/Kids_shoes.jpg">
+      <img class="card-image" src="images/products/Kids_shoes.jpg" alt="Kids' shoes">
       <div class="card-content">
         <h4 class="card-title">Kid's Shoes</h4>
         <a href="#">Shop Kids</a>
       </div>
     </div>
 
-    <!-- Repeating Cards -->
-    <div class="card column-3">
-      <img class="card-image" src="images/products/Casual_shoes_women.jpg">
-      <div class="card-content">
-        <h4 class="card-title">Women's Shoes</h4>
-        <a href="#">Shop Women</a>
-      </div>
-    </div>
-    
-
-    <!-- Banner -->
     <div class="second-banner column-12">
       <h3>Shoes for everyone</h3>
     </div>
-    <section 
-    class="about-section column-12">
-    </section>
   </main>
 
-  <!-- Footer Section -->
   <footer class="main-footer">
     <div class="footer-container">
       <nav class="footer-nav">
@@ -154,10 +116,11 @@
         <a href="#">Giftcards</a>
       </nav>
       <nav class="footer-nav">
-        <h3>Tip Toe Soles</h3>
+        <h3>TipToe Soles</h3>
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
       </nav>
       <nav class="social-nav">
         <h3>Social</h3>
@@ -166,7 +129,7 @@
         <a href="https://youtube.com"><i class="fa-brands fa-square-youtube"></i></a>
       </nav>
     </div>
-    <p class="copyright">&copy; Tip Toe Soles 2025. All rights reserved.</p>
+    <p class="copyright">&copy; TipToe Soles 2025. All rights reserved.</p>
   </footer>
 </body>
 

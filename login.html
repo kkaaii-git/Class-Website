@@ -1,67 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TipToe Soles - Contact</title>
+  <title>Login - TipToe Soles</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="responsive.css">
 </head>
-
 <body>
   <header class="main-header">
     <a href="index.html">
       <img id="site-logo" src="images/logo.png" alt="TipToe Soles logo">
     </a>
-    <nav class="main-navigation" aria-label="Main navigation">
+    <nav class="main-navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="contact.html" class="active" aria-current="page">Contact</a>
-      <a href="login.html">Login</a>
-
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main class="content">
-    <section class="contact-section column-12">
-      <h1>Contact TipToe Soles</h1>
-      <form action="#" method="post" class="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <section class="login-wrapper column-12">
+      <form class="login-form" action="#" method="post">
+        <h2>Login</h2>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required aria-label="Username">
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required aria-label="Password">
 
-        <button type="submit">Submit</button>
+        <button type="submit">Login</button>
       </form>
     </section>
   </main>
 
   <footer class="main-footer">
     <div class="footer-container">
-      <nav class="footer-nav" aria-label="Policies">
+      <nav class="footer-nav">
         <h3>Policies</h3>
         <a href="#">Deliveries</a>
         <a href="#">Returns</a>
         <a href="#">Exchange</a>
       </nav>
-      <nav class="footer-nav" aria-label="Services">
+      <nav class="footer-nav">
         <h3>Services</h3>
         <a href="#">Find a store</a>
         <a href="#">Size Guide</a>
         <a href="#">Giftcards</a>
       </nav>
-      <nav class="footer-nav" aria-label="Company navigation">
+      <nav class="footer-nav">
         <h3>TipToe Soles</h3>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="contact.html" class="active" aria-current="page">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
-      <nav class="social-nav" aria-label="Social media">
+      <nav class="social-nav">
         <h3>Social</h3>
         <a href="https://facebook.com">Facebook</a>
         <a href="https://instagram.com">Instagram</a>
@@ -71,5 +64,4 @@
     <p class="copyright">&copy; TipToe Soles 2025. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
